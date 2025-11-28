@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-left">Sentiment Portal</div>
+    <div class="nav-right">
+        <a href="/">Home</a>
+        <a href="/survey">Survey</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/about">About</a>
+    </div>
+</nav>
+
+<div class="content">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>
