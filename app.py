@@ -49,7 +49,7 @@ def dashboard():
     rows = conn.execute("SELECT department, facility, rating FROM responses").fetchall()
     conn.close()
 
-    data = [dict(row) for row in rows]   # <-- FIX
+    data = [dict(row) for row in rows]   
     print("DATA SENT TO TEMPLATE:", data)
     return render_template('dashboard.html', data=data)
 

@@ -37,7 +37,7 @@ body {
     box-shadow: 0 6px 18px rgba(12,18,36,0.15);
 }
 
-.nav-left { font-weight: 700; letter-spacing: 0.2px; }
+.nav-left { font-weight: 700; letter-spacing: 0.2px; display : flex; align-items : left; justify-content: flex-end; }
 .nav-right { display:flex; gap:12px; align-items:center; }
 
 .nav-right a {
