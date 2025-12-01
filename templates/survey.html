@@ -2,10 +2,10 @@
 {% block content %}
 <h2>Student Survey Form</h2>
 
-<form action="/submit_survey" method="POST">
+<form class="survey-form" action="/submit_survey" method="POST">
 
     <label>Name:</label>
-    <input type="text" name="name" required>
+    <input type="text" name="name" placeholder="Your full name" required>
 
     <label>Department:</label>
     <select name="department">
@@ -26,12 +26,12 @@
     </select>
 
     <label>Rating (1–5):</label>
-    <input type="number" name="rating" min="1" max="5" required>
+    <input type="number" name="rating" min="1" max="5" placeholder="Rate from 1 to 5" required>
 
     <label>Comment:</label>
-    <textarea name="comment" rows="4"></textarea>
+    <textarea name="comment" rows="4" placeholder="Share your feedback"></textarea>
 
-    <button type="submit">Submit</button>
+    <button type="submit" class="btn primary">Submit</button>
 </form>
 
 {% endblock %}
